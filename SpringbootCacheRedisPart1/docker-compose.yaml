@@ -11,13 +11,14 @@ services:
     depends_on:
       - redis-cache
     environment:
-      REDIS_HOST: redis-cache
+      REDIS_HOST: localhost
       REDIS_PORT: 6379
       REDIS_PASSWORD: 123456
 
   redis-cache:
     image: redis:6.2.1
     mem_limit: 300m
+    command: redis-server --requirepass 123456 --protected-mode no --bind 0.0.0.0
     ports:
       - "6379:6379"
     networks:

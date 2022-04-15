@@ -35,5 +35,6 @@
 
 ### commands
 - SpringbootCacheRedisPart1>docker-compose up
+- SpringbootCacheRedisPart1>docker-compose down
 - docker logs -f 74b
 - spring-boot:build-image -DskipTests -f pom.xml
