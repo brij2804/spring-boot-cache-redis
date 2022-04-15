@@ -1,6 +1,7 @@
 package com.brijesh.cache.entity;
 
-import jakarta.persistence.*;
+
+import javax.persistence.*;
 
 @Entity
 @Table(name="user_table")

@@ -1,0 +1,27 @@
+version: '3.7'
+
+services:
+  user-service:
+    image: brij2804/springboot-cache-redis:0.0.1-SNAPSHOT
+    mem_limit: 700m
+    ports:
+    - "8080:8080"
+    networks:
+      - cache-network
+    depends_on:
+      - redis-cache
+    environment:
+      REDIS_HOST: redis-cache
+      REDIS_PORT: 6379
+      REDIS_PASSWORD: 123456
+
+  redis-cache:
+    image: redis:6.2.1
+    mem_limit: 300m
+    ports:
+      - "6379:6379"
+    networks:
+      - cache-network
+
+networks:
+  cache-network:

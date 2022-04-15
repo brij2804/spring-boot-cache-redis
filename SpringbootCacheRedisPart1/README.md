@@ -20,3 +20,11 @@
 - Cacheable conditions
 
 ### URLs
+- H2 db
+  http://localhost:8080/h2-console/
+- Intial data load in H2
+  http://localhost:8080/initialDataLoad
+- 
+### commands
+- SpringbootCacheRedisPart1>docker-compose up
+- docker logs -f 74b
