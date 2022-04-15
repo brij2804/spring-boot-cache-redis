@@ -27,11 +27,12 @@
 - Intial data load in H2
   http://localhost:8080/initialDataLoad
 - User
-  |#|Request Type|Url|
+  Request Type|Url|
   ---|---
   |GET|http://localhost:8080/user/{userid}|
   |PUT|http://localhost:8080/user|java|[Solution](./Algorithms/AddTwoNumbers.java)|
   |DELETE|http://localhost:8080/user/{id}|
+  
 ### commands
 - SpringbootCacheRedisPart1>docker-compose up
 - docker logs -f 74b
